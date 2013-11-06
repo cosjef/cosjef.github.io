@@ -61,16 +61,15 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
+# Twitter
+twitter_user: cosjef
+twitter_tweet_button: true
 
 # Github repositories
 github_user: cosjef
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
-
-# Twitter
-twitter_user: cosjef
-twitter_tweet_button: true
 
 # Google +1
 google_plus_one: false
@@ -90,7 +89,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: cosjef
 disqus_show_comment_count: false
 
 # Google Analytics
