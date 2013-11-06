@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://cosjef.github.io
+title: Jeff's Octopress Blog
+subtitle: Thoughts on Making the Internet Safe & Secure
+author: Jeff Costa
 simple_search: http://google.com/search
 description:
 
@@ -16,8 +16,8 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
-subscribe_email:
+## subscribe_rss: /atom.xml
+## subscribe_email:
 # RSS feeds can list your email address if you like
 email:
 
@@ -63,13 +63,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: cosjef
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: @cosjef
 twitter_tweet_button: true
 
 # Google +1
@@ -94,7 +94,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id:UA-17903495-5
 
 # Facebook Like
 facebook_like: false
