@@ -69,7 +69,7 @@ twitter_tweet_button: true
 # Github repositories
 github_user: cosjef
 github_repo_count: 0
-github_show_profile_link: true
+github_show_profile_link: false
 github_skip_forks: true
 
 # Google +1
