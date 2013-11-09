@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Jeff's Octopress Blog]]></title>
-  <link href="http://cosjef.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: webpagetest | Jeff's Octopress Blog]]></title>
+  <link href="http://cosjef.github.io/blog/categories/webpagetest/atom.xml" rel="self"/>
   <link href="http://cosjef.github.io/"/>
   <updated>2013-11-08T19:29:56-05:00</updated>
   <id>http://cosjef.github.io/</id>
@@ -23,7 +23,7 @@
 <p>I thought this was fantastic until I ran the site through <a href="http://www.webpagetest.org/result/131107_38_615/">webpagetest</a>. While it loaded in a fast 1.9 seconds, I noticed a number of yellow lock indicators in the waterfall chart in several requests. These individual requests were being made over SSL. But why would you need SSL for an anonymous user on a website composed of static objects?</p>
 
 <p>Below is a screen capture from the webpagetest results for &ldquo;repeat view&rdquo; &ndash; a browser hitting the site with a primed cache. Note the purple sections that represent SSL negotiation duration and the sheer number of lock icons:
-<img src="http://cosjef.github.io/images/2013-11-07_22-20-51.png" alt="" /></p>
+<img src="/images/2013-11-07_22-20-51.png" alt="" /></p>
 
 <p>Note the domain names in use for these requests:<br/>
 &ndash; Github&rsquo;s API<br/>
@@ -44,12 +44,13 @@
 
 <p>Anywhere you see an https reference, change it to http instead. Now open the /source/_includes/asides/github.html file, and perform the same https-to-http edits:</p>
 
-<pre><code>&lt;section&gt;
+<pre><code>
+&lt;section&gt;
   &lt;h1&gt;GitHub Repos&lt;/h1&gt;
   &lt;ul id="gh_repos"&gt;
     &lt;li class="loading"&gt;Status updating...&lt;/li&gt;
   &lt;/ul&gt;
-
+  
   &lt;script type="text/javascript"&gt;
     $(document).ready(function(){
         if (!window.jXHR){
@@ -68,8 +69,9 @@
         });
     });
   &lt;/script&gt;
-  &lt;script src="http://cosjef.github.io/javascripts/github.js" type="text/javascript"&gt; &lt;/script&gt;
+  &lt;script src="/javascripts/github.js" type="text/javascript"&gt; &lt;/script&gt;
 &lt;/section&gt;
+
 </code></pre>
 ]]></content>
   </entry>
